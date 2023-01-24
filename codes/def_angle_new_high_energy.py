@@ -69,7 +69,7 @@ for (idn,n) in enumerate(nkeys):
 
     lbl = n.round(2)
     if n==2:
-        p = ax.plot(Xs, Ys, zorder=0, label=f'$\\rm linearized$', linestyle='dashed', color='black')
+        p = ax.plot(Xs, Ys, zorder=0, label=f'$\\rm linearized$', linestyle='dotted', color='white')
     else:
         p = ax.plot(Xs, Ys, zorder=-idn-1, label=f'$Em^*a^2={lbl}$', color=cols[idn])
 circle = plt.Circle([0,0], 3.0/2, facecolor='black', alpha=0.2, edgecolor='none', zorder=-999)
@@ -104,7 +104,7 @@ for (idn,n) in enumerate(nkeys):
 
     lbl = n.round(2)
     if n==2:
-        p = ax.plot(Xs, Ys, zorder=0, label=f'$Em^*a^2={lbl}$', linestyle='dashed', color='black')
+        p = ax.plot(Xs, Ys, zorder=0, label=f'$\\rm linearized$', linestyle='dotted', color='white')
     else:
         p = ax.plot(Xs, Ys, zorder=-idn-1, label=f'$Em^*a^2={lbl}$', color=cols[idn])
 circle = plt.Circle([0,0], 3.0/2, facecolor='black', alpha=0.2, edgecolor='none', zorder=-999)
@@ -128,7 +128,7 @@ for (ide,e) in enumerate(enes):
     Xs, Ys = Xs[order], Ys[order]
     enth = 1
     if e == 2:
-        ax.plot(Xs[::enth], Ys[::enth], zorder=999, color='black', linestyle='dashed')
+        ax.plot(Xs[::enth], Ys[::enth], zorder=999, color='white', linestyle='dotted')
     else:
         ax.plot(Xs[::enth], Ys[::enth], zorder=len(nkeys)-idn-1, color=cols[ide])
 ax.set_xscale('log')
@@ -150,7 +150,7 @@ for (ide,e) in enumerate(enes):
     Xs, Ys = Xs[order], Ys[order]
     enth = 1
     if e == 2:
-        ax.plot(Xs[::enth], Ys[::enth], zorder=999, color='black', linestyle='dashed')
+        ax.plot(Xs[::enth], Ys[::enth], zorder=999, color='white', linestyle='dotted')
     else:
         ax.plot(Xs[::enth], Ys[::enth], zorder=len(nkeys)-idn-1, color=cols[ide])
 ax.set_xscale('log')
